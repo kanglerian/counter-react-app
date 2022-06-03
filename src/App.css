@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vh;
   pointer-events: none;
 }
 
@@ -24,8 +24,35 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.button {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: 700;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: white;
+}
+
+.action {
+  background-color: #27c4f0;
+}
+
+.reset {
+  background-color: #ff0000;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.counter {
+  background-color: #3c4047;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: right;
+  padding-right: 30px;
+  font-family: 'Press Start 2P', cursive;
 }
 
 @keyframes App-logo-spin {

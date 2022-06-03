@@ -1,22 +1,30 @@
+import {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [number, setNumber] = useState(0);
+  
+  const ubah = () => {
+    setNumber(number+1);
+  }
+
+  const reset = () => {
+    setNumber(0);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={logo} className="App-logo" />
+        <div className='container'>
+          <h3>Hai, Lerian Febriana</h3>
+          <h5 className='counter'>{number}</h5>
+        </div>
+        <div>
+          <button type='button' className='button action' onClick={ubah}>click here!</button>
+          <button type='button' className='button reset' onClick={reset}>reset</button>
+        </div>
       </header>
     </div>
   );
