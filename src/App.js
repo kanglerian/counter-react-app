@@ -7,6 +7,9 @@ const App = () => {
   
   const ubah = () => {
     setNumber(number+1);
+    if(number === 33){
+      setNumber(1);
+    }
   }
 
   const reset = () => {
@@ -16,7 +19,7 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" />
+        <img src={logo} alt='logo' className="App-logo" />
         <div className='container'>
           <h3>Hai, Lerian Febriana</h3>
           <h5 className='counter'>{number}</h5>
